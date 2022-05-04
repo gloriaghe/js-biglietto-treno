@@ -64,9 +64,9 @@ document.getElementById("prezzosuHTML").innerHTML = "Il prezzo totale è di &eur
 //BONUS
 
 if (risultato === "minorenne"){
-    document.getElementById("sconto-spiegato").innerHTML = "Il prezzo che ti è stato applicato è comprensivo di uno sconto del 20%"
+    document.getElementById("sconto-spiegato").innerHTML = "Il prezzo che ti è stato applicato è comprensivo di uno sconto del 20% in quanto minorenne"
 } else if (risultato === "over"){
-    document.getElementById("sconto-spiegato").innerHTML = "Il prezzo che ti è stato applicato è comprensivo di uno sconto del 40%"
+    document.getElementById("sconto-spiegato").innerHTML = "Il prezzo che ti è stato applicato è comprensivo di uno sconto del 40% in quanto over 65"
 } else {
-    document.getElementById("sconto-spiegato").innerHTML = "Purtoppo non hai diritto a nessuno sconto."
+    document.getElementById("sconto-spiegato").innerHTML = "Purtoppo non hai diritto a nessuno sconto non essendo nè minorenne nè over 65."
  }
