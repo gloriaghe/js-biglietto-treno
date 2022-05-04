@@ -38,9 +38,6 @@ console.log(scontoMin);
 const scontoOver = ((costoKm / 100) * 60) ;
 console.log(scontoOver);
 
-
-// const scontoMin = 20%;
-
 //calcolo prezzo
 if (risultato === "minorenne"){
     prezzo = kmUtente * scontoMin;
@@ -53,4 +50,12 @@ if (risultato === "minorenne"){
        console.log(prezzo);
  }
 
- 
+ //decimali
+
+ let decimali = prezzo.toFixed(2);
+    console.log(decimali);
+
+
+// prezzo finale all'utente
+
+document.getElementById("prezzosuHTML").innerHTML = "Il prezzo totale è di &euro; " + decimali;  
