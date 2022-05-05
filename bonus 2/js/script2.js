@@ -9,10 +9,9 @@ const etaUtente = parseInt (prompt ("Qual è la tua età?"));
     console.log(etaUtente);
 
 
-let prezzo;
-
 const costoKm = 0.21;
 
+let prezzo = kmUtente * costoKm;
 
 
 //calcolo prezzo
@@ -24,11 +23,7 @@ if (etaUtente < 18){
     const scontoOver = ((costoKm / 100) * 60) ;
     prezzo = kmUtente * scontoOver;
       console.log(prezzo);
-} else {
-     prezzo = kmUtente * costoKm;
-       console.log(prezzo);
-}
-
+} 
 
 // prezzo finale all'utente
 
