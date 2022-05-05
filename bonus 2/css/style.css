@@ -31,12 +31,12 @@ nav ul{
 nav ul li {
     list-style-type: none;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 nav ul li a{
     text-decoration: none;
     color: red;
-   
 }
 
 h1 {
@@ -50,5 +50,5 @@ h1 {
     text-align: center;
     font-size: 40px;
     padding-top: 30px;
-    color: greenyellow;
+    color: blue;
 }
