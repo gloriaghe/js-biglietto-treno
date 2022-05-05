@@ -13,20 +13,15 @@ let prezzo;
 
 const costoKm = 0.21;
 
-//calcolo sconto minori
-const scontoMin = ((costoKm / 100) * 80) ;
-console.log(scontoMin);
-
-//calcolo sconto over
-const scontoOver = ((costoKm / 100) * 60) ;
-console.log(scontoOver);
 
 
 //calcolo prezzo
 if (etaUtente < 18){
+    const scontoMin = ((costoKm / 100) * 80) ;
     prezzo = kmUtente * scontoMin;
       console.log(prezzo);
 } else if (etaUtente > 64){
+    const scontoOver = ((costoKm / 100) * 60) ;
     prezzo = kmUtente * scontoOver;
       console.log(prezzo);
 } else {
@@ -52,7 +47,6 @@ if (etaUtente < 18){
 } else if (etaUtente > 64) {
     risultato = "over";
     console.log(risultato);
-
     //tutti gli altri
 } else {
     risultato = "altri";
